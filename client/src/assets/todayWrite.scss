@@ -1,0 +1,253 @@
+.create_container {
+    width: 70%;
+    max-width: 1400px;
+    padding: 10px;
+    margin: 0 auto;
+  } 
+  .create_categoryname_divide {
+    display: flex;
+  }
+  
+  .create_category_name {
+    display: flex;
+    width: 60vmax;
+    margin-right: 20px;
+  }
+  .create_categoryname_divide_right {
+    width: 38vmax;    
+  }
+  .create_title_select {
+    justify-content: space-between;
+    display: flex;
+  }
+  .create_writernamecontainer {
+    display: flex;
+    align-items: center;    
+  }
+  
+  .create_left_wrap,
+  .create_right_wrap {
+    border: 1px solid #ccc;
+  }
+  
+  .create_category,
+  .create_writernamecontainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .create_writername {
+    margin-right: 20px;
+  }
+  
+  .create_category,
+  .create_text_category {
+    display: flex;
+    border: 1px solid transparent; /* 경계선을 투명하게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* 아래쪽 그림자 */
+              0 -4px 8px rgba(0, 0, 0, 0.1), /* 위쪽 그림자 */
+              4px 0 8px rgba(0, 0, 0, 0.1), /* 오른쪽 그림자 */
+              -4px 0 8px rgba(0, 0, 0, 0.1); /* 왼쪽 그림자 */
+    margin-bottom: 20px;
+    margin-right: 2vmax;    
+    height: 70px;
+    width: 19vmax;
+    border-radius: 40px;     
+  }  
+  .create_title {
+    display: flex;
+    border: 1px solid transparent; /* 경계선을 투명하게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* 아래쪽 그림자 */
+              0 -4px 8px rgba(0, 0, 0, 0.1), /* 위쪽 그림자 */
+              4px 0 8px rgba(0, 0, 0, 0.1), /* 오른쪽 그림자 */
+              -4px 0 8px rgba(0, 0, 0, 0.1); /* 왼쪽 그림자 */
+    margin-bottom: 20px;
+    width: 40vmax; 
+    height: 70px;
+    border-radius: 40px;   
+  }
+  
+  .create_category h4 {
+    font-weight: bold;
+    line-height: 70px;
+    margin-left: 20px;
+    margin-right: 40px;
+  }  
+  .create_writernamecontainer strong {
+    font-weight: bold;
+    line-height: 70px;
+    margin-left: 20px;
+    margin-right: 40px;
+  }  
+  .create_title h4 {
+    font-weight: bold;
+    line-height: 70px;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  .create_title input {
+    width: 400px;    
+  }  
+  .create_title input:focus {
+    outline: none;
+    border-color: transparent; 
+    box-shadow: none; 
+  }
+  .create_text_category strong {
+    font-weight: bold;
+    line-height: 70px;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  
+  .create_flex_row {
+    justify-content: space-between;
+    display: flex;
+  }
+  .create_left_wrap {
+    border: 1px solid transparent; /* 경계선을 투명하게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* 아래쪽 그림자 */
+              0 -4px 8px rgba(0, 0, 0, 0.1), /* 위쪽 그림자 */
+              4px 0 8px rgba(0, 0, 0, 0.1), /* 오른쪽 그림자 */
+              -4px 0 8px rgba(0, 0, 0, 0.1); /* 왼쪽 그림자 */
+    width: 60vmax;
+    border-radius: 30px;
+  }
+  .create_left_wrap textarea {
+    margin-left: 20px;
+    width: 92%;
+    height: 80%;
+    resize: none;
+  }
+
+  .create_right_wrap {
+    border: 1px solid transparent; /* 경계선을 투명하게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* 아래쪽 그림자 */
+              0 -4px 8px rgba(0, 0, 0, 0.1), /* 위쪽 그림자 */
+              4px 0 8px rgba(0, 0, 0, 0.1), /* 오른쪽 그림자 */
+              -4px 0 8px rgba(0, 0, 0, 0.1); /* 왼쪽 그림자 */
+    width: 38vmax;
+    border-radius: 30px;
+
+  }
+  
+  .create_left_wrap,
+  .create_right_wrap {    
+    margin-right: 20px; /* 각 영역 간격을 위한 마진 */
+  }
+
+
+  .create_left_wrap h4 {
+    font-weight: bold;
+    margin: 20px;
+    font-size: 18px;
+  }
+  
+  .create_title {
+    margin-top: 20px; /* 제목과 내용 사이 간격 */
+  }
+  
+  .create_black_box {
+    border: 1px solid #ccc;
+    margin-top: 20px; /* 전체 영역과의 간격 */
+  }
+  
+  .create_black_cont {
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* 내부 요소들 간격 */
+  }
+  
+  .create_create_flex {
+    display: flex;
+  }
+  
+  .create_contents {
+    flex: 1;
+    margin-right: 20px; /* 내용과 우측 영역 간격 */
+  }
+  
+  .create_right_wrap {
+    position: relative;
+    border: 1px solid #ccc;
+  }
+  
+  .create_file h4 {
+    font-size: 18px;
+    margin: 10px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px;
+  }
+  .create_file input {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .create_file span {
+    font-size: 14px;
+    color: #dbdbdb;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .create_view_file {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #dbdbdb;
+    height: 300px;
+    position: relative;
+  }
+  
+  .create_view_file span {
+    font-size: 14px;
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+  }
+  
+  .mateToRangWrap {
+    display: flex;
+  }
+  
+  .create_link {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    margin-top: 14px;
+    padding: 5px 35px;
+    box-shadow: 0px 0px 10px #66ccaa;
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 14px;
+  }
+  
+  .create_file .create_thumbnail {
+    border: 1px solid #dbdbdb;
+    width: 300px;
+    height: 150px;
+  }
+  
+  .file_border {
+    margin-top: 30px;
+  }
+  .file_border div p{
+    margin-left: 10px;
+  }
+  
+  .prev_link {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    margin-top: 14px;
+    padding: 5px 35px;
+    box-shadow: 0px 0px 10px #66ccaa;
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 14px;
+  }

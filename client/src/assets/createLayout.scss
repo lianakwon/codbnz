@@ -1,0 +1,214 @@
+.create_container {
+  position: relative;
+  display: block;
+  margin: auto;
+  max-width: 1240px;
+  .selected {
+    box-shadow: 0px 0px 10px #66ccaa;
+  }
+  .list_style {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    // box-shadow: 0 0 20px #dbdbdb;
+  }
+  h4,
+  button,
+  .create_prev_link {
+    font-size: 14px;
+  }
+  .create_h4 {
+    color: #333;
+
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .create_flex_column {
+    .create_category {
+      max-width: 240px;
+      span {
+        font-size: 14px;
+      }
+    }
+    .create_title {
+      max-width: 720px;
+      position: relative;
+    }
+  }
+  .create_flex_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .create_left_wrap {
+      width: 720px;
+      height: 560px;
+      margin-right: 20px;
+      textarea {
+        height: 400px;
+        width: 100%;
+        font-size: 14px;
+        &::placeholder {
+          color: #d6d6d6;
+        }
+      }
+    }
+    .create_right_wrap {
+      width: 500px;
+      height: 560px;
+      position: relative;
+      .create_tag {
+        input {
+          // display: none;
+        }
+        .create_select_wrap {
+          // 지역, 온/오프라인 select_wrap
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .select_wrap {
+            width: 48%;
+            font-size: 14px;
+            display: inline-block;
+            margin: 10px 0;
+            box-shadow: 0 0 10px #f4f8f0;
+            padding: 8px 14px;
+            background-color: #fff;
+            border-radius: 50px;
+            select {
+              width: 100%;
+            }
+            &.mateToFieldPick:hover {
+              box-shadow: 0px 0px 10px#66ccaa;
+            }
+            .space_wrap {
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+        .tag_flex_wrap {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          li {
+            font-size: 14px;
+            display: inline-block;
+            margin: 10px 10px 10px 0px;
+            box-shadow: 0 0 10px #f4f8f0;
+            padding: 3px 0px;
+            background-color: #fff;
+            border-radius: 50px;
+            text-align: center;
+
+            &.mateToFieldPick {
+              box-shadow: 0px 0px 10px#66ccaa;
+            }
+          }
+          .space_tag {
+            width: 100%;
+          }
+        }
+        .flex_nowrap {
+          flex-wrap: nowrap;
+        }
+        .position_tag_wrap {
+          flex-wrap: nowrap;
+        }
+        .submit_button {
+        }
+      }
+      button {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+      }
+    }
+  }
+  button {
+    float: right;
+    margin-top: 14px;
+    padding: 5px 35px;
+    box-shadow: 0px 0px 10px #66ccaa;
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      background-color: #f1f7f5;
+      transition: all 0.5s;
+      // color: #fff;
+    }
+  }
+  select {
+    font-size: 14px;
+  }
+  label {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  input {
+    font-size: 14px;
+    &::placeholder {
+      color: #d6d6d6;
+    }
+  }
+  .show {
+    opacity: 1;
+    transition: all 0.2s;
+  }
+  .hide {
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  .error_title,
+  .error_cont {
+    color: #ff7878;
+    display: inline;
+    font-size: 14px;
+  }
+  .error_title {
+    position: absolute;
+    // right: 20px;
+    top: 0;
+  }
+  .create_black_box {
+    // 그림자 css
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1380px;
+    z-index: -1;
+    .create_black_cont {
+      background-color: #d6d6d6;
+      z-index: -1;
+      border-radius: 40px;
+      margin: 10px 0;
+      filter: blur(30px);
+    }
+    .create_category {
+      height: 60px;
+      width: 240px;
+    }
+    .create_title {
+      height: 60px;
+      width: 720px;
+    }
+    .create_create_flex {
+      display: flex;
+
+      .create_contents {
+        height: 560px;
+        width: 720px;
+      }
+      .create_right_wrap {
+        height: 560px;
+        width: 500px;
+      }
+    }
+  }
+}

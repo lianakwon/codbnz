@@ -1,0 +1,293 @@
+.create_container {
+  width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  .deleteImg > img {
+    width: 18px;
+  }
+  h4 {
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  li {
+    font-size: 14px;
+    display: inline-block;
+    margin: 10px 10px 10px 0px;
+    box-shadow: 0 0 10px #f4f8f0;
+    padding: 3px 14px;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    &.mateToFieldPick {
+      box-shadow: 0px 0px 10px#66ccaa;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .select-wrap {
+    margin: 10px;
+    width: 100%;
+  }
+  .todaySelectWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  select {
+    padding: 10px 14px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #dbdbdb;
+    width: 100%;
+  }
+
+  .tagWrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .spaceTagWrap {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    li {
+      width: 50%;
+      label {
+        padding: 10px 50px;
+      }
+    }
+  }
+  .selectAraWrap {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    div {
+      width: 50%;
+    }
+    select {
+      margin: 10px;
+    }
+  }
+  .mateToNextLink {
+    // 등록 & 이전 & 다음버튼 공동 css
+    border-radius: 50px;
+    padding: 5px 14px;
+    background-color: #fff;
+    font-size: 14px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    line-height: 22px;
+
+    cursor: pointer;
+    transition: all 0.5s;
+    &.mateToFieldPick:hover {
+      box-shadow: 0px 0px 10px#66ccaa;
+      transition: all 0.5s;
+    }
+  }
+  .mateToCreateCenterBox {
+    display: flex;
+    flex-direction: column;
+
+    .mateToContentTitle {
+      max-width: 720px;
+    }
+  }
+  .mateToFile {
+    span {
+      font-size: 14px;
+      color: #dbdbdb;
+    }
+  }
+
+  .listStyle {
+    padding: 20px 30px;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: #fff;
+  }
+  .mateToCreateContents {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .mateToCreateLeftWrap {
+    width: 720px;
+
+    span.mateToDeTitle {
+      margin-left: 30px;
+    }
+    .mateToContents {
+      margin-left: 10px;
+    }
+  }
+  .mateToCreateRightWrap {
+    position: relative;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: #fff;
+    width: 480px;
+    input {
+      display: none;
+    }
+    .mateToFileBox {
+      border: 1px solid #dbdbdb;
+      height: 300px;
+      span {
+        position: absolute;
+        left: 80px;
+        bottom: 160px;
+        // text-align: center;
+      }
+    }
+    .mateToTag {
+      .mateToRangWrap {
+        display: flex;
+        li {
+          width: 100%;
+        }
+      }
+      .mateToThumbnail {
+        border: 1px solid #dbdbdb;
+        height: 150px;
+        width: 250px;
+      }
+      .mateToPrevLink {
+        border-radius: 50px;
+        padding: 5px 14px;
+        background-color: #fff;
+        font-size: 14px;
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        line-height: 22px;
+        cursor: pointer;
+        transition: all 0.5s;
+        &.mateToFieldPick:hover {
+          box-shadow: 0px 0px 10px#66ccaa;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+  .mateToBlackBox {
+    // 그림자 css
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1380px;
+    z-index: -1;
+    .mateToBlackCont {
+      background-color: #dbdbdb;
+      z-index: -1;
+      border-radius: 40px;
+      margin: 10px 0;
+      filter: blur(30px);
+    }
+    .mateToListCategory {
+      height: 60px;
+      width: 240px;
+    }
+    .mateToListTitle {
+      height: 60px;
+      width: 720px;
+    }
+    .mateToCreateFlex {
+      display: flex;
+
+      .mateToListContents {
+        height: 550px;
+        width: 720px;
+      }
+      .mateToListRightWrap {
+        height: 480px;
+        width: 480px;
+      }
+    }
+  }
+}
+
+
+// .create_container {
+//   .create_right_wrap {
+//     position: relative;
+//     .create_file {
+//       h4 {
+//         display: inline-block;
+//         margin-bottom: 20px;
+//       }
+//       span {
+//         font-size: 14px;
+//         color: #dbdbdb;
+//         display: inline-block;
+//         margin-left: 20px;
+//       }
+//       .create_view_file {
+//         border: 1px solid #dbdbdb;
+//         height: 300px;
+//         position: relative;
+//         span {
+//           font-size: 14px;
+//           color: #dbdbdb;
+//           margin: auto;
+//           width: 100%;
+//           position: absolute;
+//           bottom: 10px;
+//           left: 20px;
+//         }
+//       }
+//       .mateToRangWrap {
+//         display: flex;
+//         li {
+//           width: 100%;
+//         }
+//       }
+
+//       .create_link {
+//         position: absolute;
+//         right: 30px;
+//         bottom: 30px;
+//         margin-top: 14px;
+//         padding: 5px 35px;
+//         box-shadow: 0px 0px 10px #66ccaa;
+//         background-color: #fff;
+//         border-radius: 30px;
+//         cursor: pointer;
+//         transition: all 0.5s;
+//         font-size: 14px;
+//       }
+//     }
+
+//     .create_file {
+//       .create_thumbnail {
+//         border: 1px solid #dbdbdb;
+//         width: 300px;
+//         height: 150px;
+//       }
+//     }
+//     .file_border {
+//       border-top: 1px solid #ddd;
+//       margin-top: 30px;
+//     }
+//   }
+// }
+// .prev_link {
+//   position: absolute;
+//   left: 30px;
+//   bottom: 30px;
+//   margin-top: 14px;
+//   padding: 5px 35px;
+//   box-shadow: 0px 0px 10px #66ccaa;
+//   background-color: #fff;
+//   border-radius: 30px;
+//   cursor: pointer;
+//   transition: all 0.5s;
+//   font-size: 14px;
+// }

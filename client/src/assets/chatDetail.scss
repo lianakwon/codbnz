@@ -1,0 +1,166 @@
+.talk_cont {
+
+  .talk_list.left {
+    width: 36%;
+    margin-right: 10px;
+
+    a {
+      width: 100%;
+    }
+
+    .txt_box {
+      width: calc(100% - 100px);
+    }
+
+  }
+
+  .talk_list.right {
+    width: 60%;
+    margin-left: 10px;
+
+    .talk_detail_inner {
+      width: 100%;
+      height: 92%;
+      position: relative;
+
+      .talk_date {
+        margin: auto;
+        border-radius: 20px;
+        padding: 0px 15px;
+        background-color: #333;
+        color: #ffffff;
+        width: -moz-fit-content;
+        width: fit-content;
+        font-size: 14px;
+      }
+
+      li {
+        padding: 0;
+        border: none;
+        display: block;
+        margin: 10px 0;
+        padding: 5px 0;
+
+        .img_box {
+          min-width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: #eee;
+          display: inline-block;
+          text-align: center;
+          margin: 8px 8px 0 0;
+        }
+
+        .txt_box {
+          overflow-x: visible;
+          text-overflow: ellipsis;
+          text-wrap: wrap;
+          display: inline-block;
+
+          h4 {
+            margin: 0 0 0 6px;
+            font-size: 14px;
+          }
+
+          &::after {
+            content: "";
+            display: block;
+            clear: both;
+            height: 20px;
+          }
+
+          .cont {
+            display: inline-block;
+            max-width: 310px;
+            padding: 8px 16px 5px;
+            font-size: 14px;
+            color: #333;
+            border-radius: 20px;
+            border: 1px solid #d2f0e6;
+          }
+
+          .time {
+            display: inline-block;
+            margin: 0 8px;
+            color: #3337;
+            font-size: 12px;
+          }
+        }
+      }
+
+      li.mine {
+        text-align: right;
+        height: max-content;
+        margin: 0;
+        padding: 0;
+
+        &::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+
+        span {
+          text-align: left;
+        }
+      }
+
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      >div {
+        height: calc(100% - 100px);
+        overflow: scroll;
+      }
+    }
+
+    form {
+      border: 1px solid #ddd;
+      border-width: 1px 0 0 0;
+      z-index: 999;
+      position: absolute;
+      bottom: 0;
+      height: 100px;
+      background: #fff;
+      width: 100%;
+      padding: 25px 0 0;
+
+      h4 {
+        display: inline-block;
+        width: fit-content;
+        line-height: 24px;
+        margin: 4px 18px 0 0;
+        font-size: 14px;
+      }
+
+      input {
+        line-height: 24px;
+        width: 77%;
+        border-bottom: 1px solid #ddd;
+
+        &::placeholder {
+          color: #3337;
+          font-size: 14px;
+        }
+      }
+
+      button::after {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border: 2px solid #333;
+        border-width: 2px 2px 0 0;
+        position: absolute;
+        bottom: 25px;
+        right: 15px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+}

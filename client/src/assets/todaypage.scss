@@ -1,0 +1,163 @@
+#today_detail {
+  height:auto;
+  position: relative;
+  display: block;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  >div {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  >div>div {
+    content: "";
+    display: inline-block;
+    padding: 0 40px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 40px;
+    margin: 0 0 24px 0;
+  }
+
+  .inner_box>div {
+    background: #fff;
+  }
+
+  .black_box>div {
+    filter: blur(15px);
+    background-color: #3333;
+  }
+
+  span {
+    color: #3339;
+    margin-right: 16px;
+  }
+
+  h4 {
+    color: #333;
+    font-weight: 600;
+    display: inline-block;
+  }
+
+
+  .cate {
+    width: 280px;
+    margin-right: 24px;
+  }
+
+  .status {
+    width: 280px;
+  }
+
+  .title {
+    width: 100%;
+
+    span::after {
+      display: none;
+    }
+
+    .details {
+      display: block;
+      float: right;
+
+      li {
+        display: inline-block;
+        margin-left: 20px;
+        line-height: 80px;
+      }
+
+      img {
+        width: 14px;
+        margin: 0 6px 0 0;
+      }
+    }
+  }
+
+  .cont {
+    width: 59%;
+    height: 54vh;
+    float: left;
+    overflow: scroll;
+
+    h4 {
+      display: block;
+      line-height: 28px;
+    }
+
+    .profile {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid #3332;
+      overflow: hidden;
+    }
+  }
+
+  .thum {
+    width: 39%;
+    height: 54vh;
+    float: right;
+    overflow: scroll;
+
+    h4 {
+      display: block;
+    }
+  }
+
+  .comment {
+    width: 100%;
+    height: fit-content;
+    position:static;
+    z-index: 999;
+
+    img {
+      width: 14px;
+    }
+
+    .profile {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid #3332;
+      overflow: hidden;
+    }
+
+  }
+
+
+
+
+  .answered {
+    padding: 0 24px 0 0;
+    border-radius: 0;
+    margin: 0 24px 0 0;
+    color: #6ca;
+
+    &.none {
+      color: #f66;
+    }
+  }
+
+  .quest {
+    color: #6ca;
+  }
+
+  .likes {
+    color: #f66;
+  }
+
+  .cmnts {
+    color: #333;
+  }
+
+  .views {
+    font-weight: 400;
+    color: #333a;
+  }
+}

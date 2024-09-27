@@ -1,0 +1,698 @@
+.inner_m {
+  >div {
+    width: 100%;
+    text-align: left;
+  }
+
+  h2 {
+    font-family: 'pt';
+    text-align: left;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 17px;
+    padding-top: 15px;
+    margin-left: 0;
+    padding-left: 15px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 10px;
+      width: 10px;
+      border: 2px solid #333;
+      border-width: 0 0 0 3px;
+      position: absolute;
+      top: calc(50% + 6px);
+      transform: rotate(45deg);
+      left: 0;
+    }
+
+    &.link_back {
+      cursor: pointer;
+
+      &::after {
+        border-width: 0 0 3px 3px;
+        top: calc(50% + 2px);
+      }
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .more {
+    float: right;
+    position: relative;
+    margin: 0 8px 0 0;
+    padding: 0 16px 0 0;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #3332;
+      box-shadow: 5px 5px 15px #3331;
+      border-width: 2px 2px 0 0;
+      position: absolute;
+      right: 0;
+      top: 8px;
+      transform: rotate(45deg);
+    }
+  }
+
+  .thumb {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #3332;
+    border-radius: 40px;
+    margin-bottom: 8px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  .decs {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.banner {
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 40px;
+  }
+
+  li {
+    width: 96vw;
+    max-width: 1400px;
+  }
+
+  .carousel {
+
+    .carousel-status {
+      display: none;
+    }
+
+    .control-dots .dot {
+      width: 12px;
+      height: 3px;
+      border-radius: 0;
+      box-shadow: 0 0 10px #3332;
+    }
+
+    .thumb {
+      border: none;
+      content: "";
+      display: block;
+      height: 300px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .thumb:hover {
+      border: none;
+    }
+
+    img {
+      position: absolute;
+      right: 15%;
+      bottom: -54px;
+      width: 450px;
+    }
+  }
+
+  .title,
+  .decs,
+  .logos {
+    position: absolute;
+  }
+
+  .title {
+    font-size: 22px;
+    top: 118px;
+    left: 160px;
+  }
+
+  .decs {
+    text-align: left;
+    font-size: 16px;
+    top: 148px;
+    left: 160px;
+  }
+
+  .logos {
+    text-align: left;
+    font-size: 14px;
+    bottom: 50px;
+    right: 160px;
+    font-weight: 800;
+    font-family: "ms";
+  }
+
+  .banner_1,
+  .banner_2,
+  .banner_3,
+  .banner_4,
+  .banner_5 {
+    margin: 0 4px 4px;
+  }
+
+  .banner_1 a {
+    background: #66CCAA33;
+  }
+
+  .banner_2 a {
+    background: #FF666633;
+  }
+
+  .banner_3 a {
+    background: #8C8CFF33;
+  }
+}
+
+.inner_m .text {
+  margin: 100px 0;
+  text-align: center;
+
+  h2 {
+    margin-left: 0;
+    padding-left: 0;
+    font-family: 'ms';
+    text-align: center;
+  }
+
+  h2::after {
+    border-width: 2px 0 0 0;
+    top: 0;
+    left: calc(50% - 8px);
+  }
+}
+
+.icons {
+  text-align: center;
+
+  ul {
+    display: flex;
+    max-width: 840px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  li {
+    width: 160px;
+    height: 280px;
+  }
+
+  .thumb {
+    height: 160px;
+  }
+
+  img {
+    margin: 10% 0 0 0;
+    width: 80%;
+  }
+}
+
+.title_area {
+  padding: 0 5px;
+
+  h2 {
+    float: left;
+    margin-top: 0;
+    padding-top: 0;
+    display: block;
+  }
+
+  h2::after {
+    top: 10px;
+  }
+
+  .more {
+    float: right;
+    display: block;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.mate {
+  width: 100%;
+  margin: 100px 0;
+
+  ul {
+    text-align: left;
+  }
+
+  .mate_con {
+    position: relative;
+    width: 24%;
+    height: 360px;
+    margin: 20px 1.25% 0 0;
+    text-align: left;
+    display: inline-block;
+
+    &:nth-child(4n) {
+      margin: 20px 0 0 0;
+    }
+
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      padding: 45px 30px 30px;
+      border-radius: 40px;
+      border: 1px solid #3332;
+    }
+
+    h4 {
+      font-weight: 700;
+      text-wrap: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    p {
+      font-size: 14px;
+      color: #3339;
+      margin: 4px 0 0 0;
+      text-wrap: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .mate_emotion {
+    margin: 20px 0 0;
+    display: block;
+    width: calc(100% - 40px);
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    li {
+      float: left;
+      margin: 0 9px 0 0;
+      font-size: 14px;
+    }
+
+    img {
+      width: 12px;
+      margin: 0 3px 0 0;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    li.quest span {
+      color: #6CA;
+    }
+
+    li.likes span {
+      color: #F66;
+    }
+
+    li.cmmnt span {
+      color: #333;
+    }
+  }
+
+  .tagWrap {
+    position: absolute;
+    bottom: 30px;
+    display: block;
+    width: calc(100% - 50px);
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    li {
+      display: block;
+      width: max-content;
+      overflow: hidden;
+    }
+
+    li span {
+      position: relative;
+      float: left;
+      margin: 0 3px 6px 0;
+      color: #fff;
+      padding: 0 9px 0 22px;
+      line-height: 20px;
+      font-size: 12px;
+      border-radius: 12px 4px 4px 12px;
+    }
+
+    li span::after {
+      content: "";
+      display: block;
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 3px;
+      position: absolute;
+      top: calc(50% - 3px);
+      left: 10px;
+    }
+
+    li.goal span {
+      background: #66CCAA;
+    }
+
+    li.area span {
+      background: #8c8cff;
+    }
+
+    li.part span {
+      background: #ff6666;
+    }
+
+    li.lang span {
+      background: #61aaf2;
+    }
+
+    li.spce span {
+      background: #ff8d4a;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.today {
+  width: 100%;
+  margin: 100px 0 60px;
+
+  .today_con {
+    position: relative;
+    width: 32%;
+    height: 120px;
+    margin: 25px 2% 0 0;
+    text-align: left;
+    display: inline-block;
+
+    &:nth-child(3n) {
+      margin: 25px 0 0 0;
+    }
+
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      padding: 20px;
+      border-radius: 40px;
+      border: 1px solid #3332;
+    }
+
+    h4 {
+      font-weight: 700;
+      text-wrap: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    p {
+      font-size: 14px;
+      color: #3339;
+      margin: 4px 0 0 0;
+      text-wrap: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .thum {
+      float: left;
+      content: "";
+      display: block;
+      height: 120px;
+      width: 160px;
+      margin: -21px 15px 0 -31px;
+      border: 1px solid #3332;
+      border-radius: 40px 0 0 40px;
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+
+      img {
+        height: 120px;
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        display: block;
+        height: 120px;
+        width: 160px;
+        background: #3331;
+      }
+    }
+
+    .cont {
+      color: #333;
+    }
+  }
+
+  .today_emotion {
+    margin: 8px 0 0;
+    display: block;
+    width: calc(100% - 40px);
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    li {
+      float: left;
+      margin: 0 9px 0 0;
+      font-size: 14px;
+    }
+
+    img {
+      width: 12px;
+      margin: 0 3px 0 0;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    li:nth-child(1) span {
+      font-weight: 800;
+      margin: 0 11px 0 0;
+    }
+
+    .isAnsweredTrue {
+      color: #6CA;
+    }
+
+    .isAnsweredFalse {
+      color: #F66;
+    }
+
+    li.quest span {
+      color: #6CA;
+    }
+
+    li.likes span {
+      color: #F66;
+    }
+
+    li.cmmnt span {
+      color: #333;
+    }
+  }
+}
+
+
+@media all and (max-width: 1280px) {
+  .mate {
+    .mate_con {
+      width: 32%;
+      margin: 25px 2% 0 0;
+      height: 360px;
+
+      &:nth-child(4n) {
+        margin: 20px 2% 0 0;
+      }
+
+      &:nth-child(3n) {
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+
+  .today {
+    .today_con {
+      width: 49%;
+      margin: 25px 2% 0 0;
+
+      &:nth-child(3n) {
+        margin: 20px 2% 0 0;
+      }
+
+      &:nth-child(2n) {
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 840px) {
+  .mate {
+    .mate_con {
+      width: 49%;
+      margin: 25px 2% 0 0;
+      height: 360px;
+
+      &:nth-child(3n) {
+        margin: 20px 2% 0 0;
+      }
+
+      &:nth-child(2n) {
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+
+  .today {
+    .today_con {
+      height: max-content;
+      display: inline-block;
+
+      a {
+        height: max-content;
+        padding: 0;
+        display: block;
+        border: none;
+      }
+
+      .thum {
+        float: none;
+        width: 100%;
+        height: calc(100% - 15px);
+        overflow: hidden;
+        margin: 0 0 10px 0;
+        border-radius: 20px;
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid #3332;
+
+        img {
+          width: 100%;
+          height: auto;
+          margin: 0;
+          display: block;
+        }
+
+        &::after {
+          height: 100%;
+          width: 100%;
+          background: #3331;
+        }
+      }
+
+      h4,
+      .today_emotion {
+        margin: 4px 12px;
+      }
+
+      .cont {
+        display: none;
+      }
+
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .mate {
+    position: relative;
+
+    .mate_con {
+      width: 100%;
+      margin: 25px auto 0;
+      height: 210px;
+      overflow-x: hidden;
+
+      >a {
+        overflow: hidden;
+      }
+
+      &:nth-child(3n) {
+        margin: 20px 0 0 0;
+      }
+    }
+
+    .mate_emotion {
+      margin: 12px 0 0;
+    }
+
+    .tagWrap {
+      height: 27px;
+      padding: 1px 0 0 0;
+      width: max-content;
+      position: absolute;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 200%;
+        width: 80px;
+        background: linear-gradient(to left, #ffff, #ffff, #fff0);
+        position: absolute;
+        left: calc(91vw - 85px);
+        bottom: 5px;
+      }
+
+      li {
+        float: left;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .mate {
+    .mate_emotion {
+      margin: 12px 0 0;
+    }
+  }
+}

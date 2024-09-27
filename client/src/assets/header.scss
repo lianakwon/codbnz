@@ -1,0 +1,122 @@
+#header {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+  .header_left {
+    position: absolute;
+    left: 0;
+    line-height: 100px;
+
+    a {
+      font: normal 900 24px/100px "ms";
+    }
+  }
+
+  .header_center {
+    position: absolute;
+    left: calc(50% - 120px);
+
+    ul {
+      width: 240px;
+      display: flex;
+    }
+
+    li {
+      flex: 1;
+      line-height: 100px;
+    }
+
+  }
+
+  .header_right {
+    position: absolute;
+    right: 0;
+
+    ul {
+      width: 100px;
+      display: flex;
+    }
+
+    li {
+      flex: 1;
+      line-height: 100px;
+    }
+
+    .my_menu {
+      position: absolute;
+      top: 70px;
+      right: 35px;
+      background: #fff;
+      border-radius: 30px 0 30px 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+      display: block;
+      width: max-content;
+      height: 0;
+      padding: 0 40px;
+      overflow: hidden;
+      transition: all .2s;
+
+      &.onclick {
+        height: max-content;
+        padding: 20px 40px;
+      }
+
+      li {
+        text-align: right;
+
+        a {
+          height: 50px;
+          line-height: 50px;
+          border-bottom: 1px solid #ddd;
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+
+        &:last-child a {
+          border: 0;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 18px;
+    margin-top: 40px;
+    opacity: 1;
+
+    &[alt='login'] {
+      opacity: 1;
+    }
+  }
+
+}
+
+#main {
+  margin: 100px 0 0 0;
+  height: fit-content;
+  min-height: calc(100vh - 200px);
+}
+
+#main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#footer {
+  width: 100%;
+  height: 1px;
+
+  .inner_l {
+    height: 1px;}
+
+  p {
+    line-height: 100px;
+  }
+}

@@ -1,0 +1,84 @@
+.add_team {
+  * {
+    // border: 1px solid #3332;
+  }
+
+  table,
+  tr,
+  td {
+    width: 100%;
+    line-height: 60px;
+    display: block;
+  }
+
+  tr {
+    padding: 5px 0;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  td {
+    &::nth-child(1) {
+      width: 100px;
+    }
+
+    &::nth-child(2) {
+      width: 900px;
+    }
+  }
+
+  label {
+    display: inline-block;
+    width: 100px;
+    line-height: 60px;
+  }
+
+  input,
+  textarea {
+    border-radius: 30px;
+    line-height: 60px;
+    padding: 0 30px;
+    width: 100%;
+    width: 800px;
+    resize: none;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .05));
+
+    &.read_only {
+      color: #3336;
+      background: linear-gradient(rgba(0, 0, 0, .03), rgba(0, 0, 0, .01));
+    }
+  }
+
+  button,
+  a {
+    position: absolute;
+    bottom: 40px;
+    display: inline-block;
+    border-radius: 30px;
+    line-height: 50px;
+    padding: 0 30px;
+    margin: 0 10px 0 0;
+    border: 1px solid #ddd;
+
+    &:hover {
+      border-color: #eee;
+      background-color: #eee;
+      opacity: 1;
+    }
+  }
+
+  button {
+    right: 40px;
+    border-color: #6ca;
+
+    &:hover {
+      background-color: #6ca;
+      color: #fff;
+    }
+  }
+
+  a {
+    right: 140px;
+  }
+}
