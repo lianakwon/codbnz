@@ -1,0 +1,300 @@
+==============================
+we.cod.bnz.config : 환경설정
+==============================
+
+Rest Template Config
+Security Config
+Web Config
+Web Socket Config
+
+==============================
+we.cod.bnz.account : 계정
+==============================
+
+Account
+Account DTO
+Account Service
+Account Controller
+Account Repository
+Account Role : 계정 권한 세팅
+
+.dto
+Join DTO : 회원가입
+Login DTO : 로그인
+Profile DTO : 프로필
+Password DTO : 패스워드
+
+.exception
+Account Exception
+Account Exception Type
+Base Exception
+Base Exception Type
+Exception Handler
+
+.my
+My Controller
+My Service
+
+==============================
+we.cod.bnz.oauth
+==============================
+
+.cookie
+Cookie Utils
+Cookie Repository
+
+.exception
+OAuth Auth Exception
+
+.handler
+OAuth Failure Handler
+OAuth Success Handler
+
+.service
+Custom OAuth Service
+OAuth Principal
+
+.user
+Oauth / Unlinked
+Google Oauth / Unlinked
+Kakao Oauth / Unlinked
+Naver Oauth / Unlinked
+Oauth Factory
+Oauth Provider
+Unlinked Manager
+
+==============================
+we.cod.bnz.member : 팀 참여자
+==============================
+
+Member
+Member DTO
+Member Request DTO
+Member Service
+Member Controller
+Member Repository
+
+Member Pre : 팀 예비 참여자
+Member Pre Repository
+
+Member Role : 팀 참여자 권한
+
+==============================
+we.cod.bnz.team : 팀 + 팀 채팅
+==============================
+
+Team
+Team DTO
+Team Service
+Team Controller
+Team Repository
+
+Message Team
+Message Team DTO
+Message Team Service
+Message Team Controller
+Message Team Repository
+
+==============================
+we.cod.bnz.talk : 1:1 채팅
+==============================
+
+Talk
+Talk DTO
+Talk Service
+Talk Controller
+Talk Repository
+
+Message Talk
+Message Talk DTO
+Message Talk Service
+Message Talk Controller
+Message Talk Repository
+
+==============================
+we.cod.bnz.mate : 팀 모집 게시판
+==============================
+
+Mate
+Mate DTO
+Mate Service
+Mate Controller
+Mate Repository
+
+Tag
+Tag DTO
+Tag Service
+Tag Controller
+Tag Repository
+
+Comment Mate
+Comment Mate DTO
+Comment Mate Service
+Comment Mate Controller
+Comment Mate Repository
+
+
+
+
+
+
+==============================
+Account
+==============================
+
+조회 - get Account
+생성 - create Account
+삭제 - delete Account
+수정(게정정보) - update Account
+수정(프로파일) - update Profile
+수정(비밀번호) - update Password
+로그인 - login
+로그아웃 - logout
+
+==============================
+My
+==============================
+
+.profile
+조회 - get Profile
+수정 = update Profile
+
+.team
+조회 - get My Team
+수정 - update My Team
+
+.member
+조회 - get My Member
+수정 - update My Member
+
+.mate
+조회 - get My Mate
+수정 - update My Mate
+
+.tag
+조회 - get My Tag
+수정 - update My Tag
+
+.comment_mate
+조회 - get My Comment Mate
+수정 - update My Comment Mate
+
+.today
+조회 - get My Today
+수정 - update My Today
+
+.comment_today
+조회 - get My Comment Today
+수정 - update My Comment Today
+
+==============================
+Oauth
+==============================
+
+성공 OAuth Success Handler
+실패 OAuth Failure Handler
+
+==============================
+Mate / Tag / CommentMate
+==============================
+
+.mate
+조회 - get My Mate
+수정 - update My Mate
+
+.tag
+조회 - get My Tag
+수정 - update My Tag
+
+.commentMate
+조회 - get My Comment Mate
+수정 - update My Comment Mate
+
+==============================
+Today / CommentToday
+==============================
+
+.today
+조회 - get My Today
+수정 - update My Today
+
+.commentToday
+조회 - get My Comment Today
+수정 - update My Comment Today
+
+==============================
+Talk
+==============================
+
+조회 - get Talks
+생성 - create Talk
+삭제 - delete Talk
+
+==============================
+Message Talk
+==============================
+
+조회 - get messages Talk
+생성 - create message Talk
+삭제 - delete message Talk
+
+==============================
+Team
+==============================
+
+조회 - get Teams
+생성 - create Team
+수정 - update Team
+삭제 - delete Team
+
+==============================
+Message Team
+==============================
+
+조회 - get all messages Team
+생성 - create message Team
+삭제 - delete message Team
+
+==============================
+Member
+==============================
+
+조회 - get Members
+초대 - Put in Team
+초대수락 - Get in Team
+초대거절 - Get in Team not
+탈퇴 - Get out Team
+강퇴 - Put out Team
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==============================
+           Account
+==============================
+
+계정 삭제
+
+= 작성글/작성댓글 - 삭제
+= 좋아요/궁금해요 - 삭제
+= 멤버 - 삭제
+= 팀
+  = if MemberRole=MANAGER - 팀/메세지 삭제
+  = if MemberRole=MEMBER  - 팀/메세지 유지 + message.
+
+= 톡
+  = if - 톡/메세지 삭제
+  = if - 톡/메세지 유지 + message.
+
+
+
